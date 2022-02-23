@@ -1,0 +1,17 @@
+1. text alignment
+	ljust(width)
+	input:-	width=20
+		print("akash agrhari".ljust(width,"-")
+	output:-akash agrahari------
+		
+	center(width)
+	input:-	width=20
+		print("akash agrhari".center(width,"-")
+	output:----akash agrahari---
+		
+	rjust(width)
+	input:-	width=20
+		print("akash agrhari".ljust(width,"-")
+	output:----akash agrahari---
+		
+	
