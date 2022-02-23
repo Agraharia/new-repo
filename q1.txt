@@ -1,0 +1,66 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'getNumberOfIntegers' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts following parameters:
+#  1. STRING L
+#  2. STRING R
+#  3. INTEGER K
+#
+
+def getNumberOfIntegers(L, R, K):
+    # Write your code here
+    q=str(R)
+    R=int(R)
+    a=0 
+    
+    for i in range(L-1,R+1):
+        i=str(i)
+        
+        if len(i)==K:
+            if i[-1]!="0":
+                a+=1
+        
+        if len(i) > K:
+                w=0
+                if i[K]=="0":
+                    for j in range(K-1,-1,-1): 
+                        if i[j]=="0":
+                            break
+                   
+                        if 
+                        for e in range(K+1,len(q)):
+                            if i[e]!="0":
+                                break
+                        else:
+                            w+=1
+                    if w==0:
+                        a+=1
+            
+            
+            
+    return a
+        
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    L = int(input())
+
+    R = int(input())
+
+    K = int(input())
+
+    ans = getNumberOfIntegers(L, R, K)
+
+    fptr.write(str(ans) + '\n')
+
+    fptr.close()
